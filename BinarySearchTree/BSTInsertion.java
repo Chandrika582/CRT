@@ -17,7 +17,6 @@ class BST {
         // If the tree is empty, return a new node
         if (root == null)
             return new Node(key);
-
         // If the key is already present in the tree,
         // return the node
         if (root.key == key)
@@ -27,7 +26,6 @@ class BST {
             root.left = insert(root.left, key);
         else
             root.right = insert(root.right, key);
-
         // Return the (unchanged) node pointer
         return root;
     }
